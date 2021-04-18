@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/spacing_smlarge"
+        android:layout_marginTop="120dp"
+        android:visibility="visible"
+        app:cardBackgroundColor="@color/grey_5"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_mlarge" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilEmail"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:backgroundTint="@color/red_300"
+                android:hint="Correo Electronico"
+                android:textColorHint="@color/grey_60"
+                app:errorEnabled="true"
+                app:helperTextEnabled="true"
+                app:startIconDrawable="@drawable/ic_account"
+                app:startIconTint="@android:color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@android:color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_middle" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilPassword"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="Contraseña"
+                android:textColorHint="@color/grey_60"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@android:color/black"
+                app:errorEnabled="true"
+                app:helperTextEnabled="true"
+                app:startIconDrawable="@drawable/ic_lock"
+                app:startIconTint="@android:color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textColor="@android:color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_middle" />
+
+            <TextView
+                android:id="@+id/tvForgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/spacing_medium"
+                android:clickable="true"
+                android:text="Crear una cuenta"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="@color/grey_20"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_below="@+id/cardView"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/greeen"
+        android:onClick="iniciarSesion"
+        android:text="Iniciar Sesion"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

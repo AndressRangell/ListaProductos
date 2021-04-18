@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:id="@+id/imgCompra"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="180dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nombreCompra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Nombre del producto"
+            android:textColor="@android:color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/precioCompra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Precio"
+            android:textColor="@android:color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/fechaCompra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:text="Fecha compra"
+            android:textColor="@android:color/black"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PerfilActivity"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_margin="20dp">
+
+    <ImageView
+        android:id="@+id/imgUsuario"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_margin="30dp"
+        android:src="@drawable/usuario"/>
+
+    <TextView
+        android:id="@+id/Código"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/nombreUsuario"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/emailUsuario"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnCambiarPassword"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:text="Cambiar Contraseña"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/greeen"
+        android:textSize="20dp"
+        android:layout_margin="40dp"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:onClick="cambiarContraseña"/>
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductoActivty"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_margin="20dp">
+
+    <ImageView
+        android:id="@+id/imgProducto"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_margin="30dp"/>
+
+    <TextView
+        android:id="@+id/nombreProducto"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/descripcionProducto"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/precioProducto"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnComprar"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:text="Comprar"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/greeen"
+        android:layout_margin="40dp"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:onClick="comprar"/>
+</LinearLayout>
